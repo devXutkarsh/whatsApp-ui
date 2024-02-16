@@ -9,12 +9,15 @@ import { FaCamera } from "react-icons/fa";
 import { FaMicrophone } from "react-icons/fa";
 
 import React from "react";
+import Header from "../componnets/Header";
+import { Link } from "react-router-dom";
 
 function Chatpage() {
   return (
+    <>
     <div className="w-full h-screen bg-gray-300 flex flex-col">
       <div className="w-full p-1 bg-green-600 flex items-center gap-4">
-        <FaArrowLeft className="text-white text-2xl" />
+        <Link to="/"><FaArrowLeft className="text-white text-2xl" /></Link>
         <img
           src="https://images.unsplash.com/photo-1554126807-6b10f6f6692a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJveXxlbnwwfHwwfHx8MA%3D%3D"
           className="rounded-full w-16 h-16 object-cover object-center"
@@ -33,10 +36,9 @@ function Chatpage() {
       <div className="bg-yellow-300 m-5 p-3 rounded-md flex items-center">
         <p className=" text-center ">
        
-        <span><FaLock className="text-xl"/> </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto totam
+        <span><FaLock className="text-xl p"/> </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto totam
           obcaecati dignissimos magni inventore. Laudantium voluptatibus
-          architecto quidem tempore assumenda doloribus cum vitae nobis magni
-          porro, nihil eum exercitationem dignissimos explicabo hic.
+       
         </p>
       </div>
       <div className="bg-green-200 p-2 w-80 rounded-lg ml-auto mr-3" >
@@ -61,6 +63,7 @@ function Chatpage() {
       </div>
       
     </div>
+    </>
   );
 }
 
